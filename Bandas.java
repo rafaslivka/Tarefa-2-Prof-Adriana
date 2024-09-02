@@ -22,13 +22,22 @@ public class Bandas {
         cache = novoCachePorPessoa * 4; 
         System.out.println("Cachê atualizado para: R$ " + cache);
     }
+
+    public static void main(String[] args) {
+        Bandas banda = new Bandas();
+        banda.mostrarInformacoes();
+        banda.atualizarCidadeTour("Taubaté");
+        banda.atualizarCache(12000);
+        banda.mostrarInformacoes();
+    }
 }
+
 
 ** TESTA CLASSE **
     
 import java.util.Scanner;
 
-public class TestaClasse {
+public class TestaClasse2 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         Bandas banda = new Bandas();
